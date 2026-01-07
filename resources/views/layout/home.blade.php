@@ -14,7 +14,8 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Taxi</title>
+    <link rel="icon" href="{{asset('img/taxi.ico')}}" type="image/icon">
+    <title>TaxiOnline | VIVARA</title>
 
     <link href="{{asset('https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700')}}" rel="stylesheet">
     <!--
@@ -28,38 +29,18 @@
     <link rel="stylesheet" href="{{asset('css/animate.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
+
+    <style>
+        .vivara-description {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+    </style>
 </head>
 <body>
 <header id="header">
-    <div class="header-top">
-    </div>
-    <div class="container main-menu">
-        <div class="row align-items-center justify-content-between d-flex">
-            <a href="{{asset('index.html')}}"><img src="{{asset('img/logo.png')}}" alt="" title="" /></a>
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="{{asset('index.html')}}">Home</a></li>
-                    <li><a href="{{asset('about.html')}}">About</a></li>
-                    <li><a href="{{asset('service.html')}}">Services</a></li>
-                    <li><a href="{{asset('gallery.html')}}">Gallery</a></li>
-                    <li class="menu-has-children"><a href="">Blog</a>
-                        <ul>
-                            <li><a href="{{asset('blog-home.html')}}">Blog Home</a></li>
-                            <li><a href="{{asset('blog-single.html')}}">Blog Single</a></li>
-                            <li class="menu-has-children"><a href="">Level 2</a>
-                                <ul>
-                                    <li><a href="#">Item One</a></li>
-                                    <li><a href="#">Item Two</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="{{asset('elements.html')}}">Elements</a></li>
-                    <li><a href="{{asset('contact.html')}}">Contact</a></li>
-                </ul>
-            </nav><!-- #nav-menu-container -->
-        </div>
-    </div>
+    <div class="header-top"></div>
 </header><!-- #header -->
 
 <!-- start banner Area -->
@@ -72,345 +53,25 @@
                 <h1 class="text-uppercase">
                     911 999 911
                 </h1>
-                <p class="pt-10 pb-10 text-white">
+                <p class="vivara-description pt-10 pb-10 text-white">
                     VIVARA is inspired by vitality, freshness, and graceful movement.💕<br>
                     It represents a modern way of traveling where comfort, elegance, and trust come together.<br>
                     Every ride is designed to feel smooth, reliable, and refined, turning daily journeys into a calm and effortless experience.<br>
-                    VIVARA is not just about getting from one place to another, it’s about moving forward with confidence and style.                </p>
+                    Vivara is not just about getting from one place to another, it’s about moving forward with confidence and style.<br>
+                </p>
                 <a href="{{asset('login')}}" class="primary-btn text-uppercase">LOGIN TO ADMIN PANEL</a>
             </div>
-            <div class="col-lg-4  col-md-4 header-right">
-                <h1 class="pb-3"><i class="fa fa-heart"></i> VIVARA <i class="fa fa-heart"></i></h1>
-                <h4> taxi online</h4>
+            <div class="col-lg-4  col-md-2 header-right">
+                <h2 class="pb-30"><i class="fa fa-heart"></i> Vivara <i class="fa fa-heart"></i></h2>
+                <h4 class="pb-20">Taxi Online</h4>
             </div>
         </div>
     </div>
 </section>
 <!-- End banner Area -->
 
-<!-- Start home-about Area -->
-<section class="home-about-area section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 about-left">
-                <img class="img-fluid" src="{{asset('img/about-img.jpg')}}" alt="">
-            </div>
-            <div class="col-lg-6 about-right">
-                <h1>Globally Connected
-                    by Large Network</h1>
-                <h4>We are here to listen from you deliver exellence</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                </p>
-                <a class="text-uppercase primary-btn" href="#">Get Details</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End home-about Area -->
-
-<!-- Start services Area -->
-<section class="services-area pb-120">
-    <div class="container">
-        <div class="row section-title">
-            <h1>What Services we offer to our clients</h1>
-            <p>Who are in extremely love with eco friendly system.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 single-service">
-                <span class="lnr lnr-car"></span>
-                <a href="#"><h4>Taxi Service</h4></a>
-                <p>
-                    Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                </p>
-            </div>
-            <div class="col-lg-4 single-service">
-                <span class="lnr lnr-briefcase"></span>
-                <a href="#"><h4>Office Pick-ups</h4></a>
-                <p>
-                    Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                </p>
-            </div>
-            <div class="col-lg-4 single-service">
-                <span class="lnr lnr-bus"></span>
-                <a href="#"><h4>Event Transportation</h4></a>
-                <p>
-                    Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End services Area -->
-
-<!-- Start image-gallery Area -->
-<section class="image-gallery-area section-gap">
-    <div class="container">
-        <div class="row section-title">
-            <h1>Image Gallery that we like to share</h1>
-            <p>Who are in extremely love with eco friendly system.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 single-gallery">
-                <a href="{{asset('img/g1.jpg')}}" class="img-gal"><img class="img-fluid" src="{{asset('img/g1.jpg')}}{asset(){('')}}" alt=""></a>
-                <a href="{{asset('img/g4.jpg')}}" class="img-gal"><img class="img-fluid" src="{{asset('img/g4.jpg')}}" alt=""></a>
-            </div>
-            <div class="col-lg-4 single-gallery">
-                <a href="{{asset('img/g2.jpg')}}" class="img-gal"><img class="img-fluid" src="{{asset('img/g2.jpg')}}" alt=""></a>
-                <a href="{{asset('img/g5.jpg')}}" class="img-gal"><img class="img-fluid" src="{{asset('img/g5.jpg')}}" alt=""></a>
-            </div>
-            <div class="col-lg-4 single-gallery">
-                <a href="{{asset('img/g3.jpg')}}" class="img-gal"><img class="img-fluid" src="{{asset('img/g3.jpg')}}" alt=""></a>
-                <a href="{{asset('img/g6.jpg')}}" class="img-gal"><img class="img-fluid" src="{{asset('img/g6.jpg')}}" alt=""></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End image-gallery Area -->
-
-<!-- Start reviews Area -->
-<section class="reviews-area section-gap">
-    <div class="container">
-        <div class="row section-title">
-            <h1>Client’s Reviews</h1>
-            <p>Who are in extremely love with eco friendly system.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-review">
-                    <h4>Cody Hines</h4>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                    </p>
-                    <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-review">
-                    <h4>Chad Herrera</h4>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                    </p>
-                    <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-review">
-                    <h4>Andre Gonzalez</h4>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                    </p>
-                    <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-review">
-                    <h4>Jon Banks</h4>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                    </p>
-                    <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-review">
-                    <h4>Landon Houston</h4>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                    </p>
-                    <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-review">
-                    <h4>Nelle Wade</h4>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                    </p>
-                    <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End reviews Area -->
-
-<!-- Start home-calltoaction Area -->
-<section class="home-calltoaction-area relative">
-    <div class="container">
-        <div class="overlay overlay-bg"></div>
-        <div class="row align-items-center section-gap">
-            <div class="col-lg-8">
-                <h1>Experience Great Support</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-            </div>
-            <div class="col-lg-4 btn-left">
-                <a href="#" class="primary-btn">Reach Our Support Team</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End home-calltoaction Area -->
-
-<!-- Start latest-blog Area -->
-<section class="latest-blog-area section-gap">
-    <div class="container">
-        <div class="row section-title">
-            <h1>Latest News from our Blog</h1>
-            <p>Who are in extremely love with eco friendly system.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="single-latest-blog">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{asset('img/b1.jpg')}}" alt="">
-                    </div>
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life Style</a></li>
-                    </ul>
-                    <a href="#">
-                        <h4>Portable latest Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
-                    </p>
-                    <p class="date">31st January, 2018</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="single-latest-blog">
-                    <div class="thumb">
-                        <img class="img-fluid" src="{{asset('img/b2.jpg')}}" alt="">
-                    </div>
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life Style</a></li>
-                    </ul>
-                    <a href="#">
-                        <h4>Portable latest Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
-                    </p>
-                    <p class="date">31st January, 2018</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End latest-blog Area -->
-
 <!-- start footer Area -->
-<footer class="footer-area section-gap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h6>Quick links</h6>
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h6>Features</h6>
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h6>Resources</h6>
-                    <ul>
-                        <li><a href="#">Guides</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Experts</a></li>
-                        <li><a href="#">Agencies</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-                <div class="single-footer-widget">
-                    <h6>Follow Us</h6>
-                    <p>Let us be social</p>
-                    <div class="footer-social d-flex align-items-center">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h6>Newsletter</h6>
-                    <p>Stay update with our latest</p>
-                    <div class="" id="mc_embed_signup">
-                        <form target="_blank" action="{{asset('https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01')}}" method="get" class="form-inline">
-                            <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-                            <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
-                            <div style="position: absolute; left: -5000px;">
-                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                            </div>
-
-                            <div class="info"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-80 mx-auto footer-text col-lg-12">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-        </div>
-    </div>
+<footer>
     <img class="footer-bottom" src="{{asset('img/footer-bottom.png')}}" alt="">
 </footer>
 <!-- End footer Area -->

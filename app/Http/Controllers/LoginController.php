@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    public function form(){
+    public function form()
+    {
         return view('login.form');
     }
 
@@ -17,6 +18,7 @@ class LoginController extends Controller
             'password' => $request->get('password')
         ])){
             $request->session()->regenerate();
+
             return redirect()->intended('dashboard');
         }
         return redirect(route('login.form'));
