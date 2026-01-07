@@ -57,9 +57,9 @@
                                 @endif</td>
                             <td>
                                 <a href="{{route('trip.show',['trip'=>$trip])}}" class="btn btn-info"><i
-                                        class="fa fa-pencil"></i> UPDATE </a>
+                                        class="mdi mdi-pencil"></i> UPDATE </a>
                                 <a href="{{route('trip.delete',['trip'=>$trip])}}" class="btn btn-danger"><i
-                                        class="fa fa-trash"></i> DELETE </a>
+                                        class="mdi mdi-trash-can-outline"></i> DELETE </a>
                             </td>
                         </tr>
                     @endforeach

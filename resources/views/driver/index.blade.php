@@ -86,11 +86,11 @@
 
                             <td>
                                 <a href="{{route('driver.show',['driver'=>$driver])}}" class="btn btn-info"><i
-                                        class="fa fa-pencil"></i> UPDATE</a>
+                                        class="mdi mdi-pencil"></i> UPDATE</a>
                                 <a href="{{route('driver.delete',['driver'=>$driver])}}" class="btn btn-danger"><i
-                                        class="fa fa-trash"></i> DELETE</a>
+                                        class="mdi mdi-trash-can-outline"></i> DELETE</a>
                                 <a href="{{route('car.modal',['driver'=>$driver])}}" class="btn btn-warning"
-                                   onclick="openModal(this);return false"><i class="fa fa-car"></i>Cars</a>
+                                   onclick="openModal(this);return false"><i class="mdi mdi-car"></i>Cars</a>
                             </td>
                         </tr>
                     @endforeach
@@ -105,8 +105,8 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">ADDRESS</h4>
+                    <button type="button" class="close m-0" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
                 </div>
 
                 <div class="modal-body">

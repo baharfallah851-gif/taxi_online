@@ -26,9 +26,9 @@
                             <td>{{$admin->username}}</td>
                             <td>
                                 <a href="{{Route('admin.show',['admin' => $admin])}}"
-                                   class="btn btn-info"><i class="fa fa-pencil"></i> UPDATE</a>
+                                   class="btn btn-info"><i class="mdi mdi-pencil"></i> UPDATE</a>
                                 <a href="{{route('admin.delete',['admin' => $admin])}}" class="btn btn-danger"><i
-                                        class="fa fa-trash"></i>DELETE</a>
+                                        class="mdi mdi-trash-can-outline"></i>DELETE</a>
                             </td>
                         </tr>
                         </tbody>

@@ -1,5 +1,6 @@
 <div class="form-floating mb-3 mt-3">
     <input type="hidden" name="customer_id" value="{{$customer->id}}">
+    <h4 class="text-center">Address Table</h4>
     <button class="btn btn-inverse-primary btn-rounded btn-icon" style="margin-bottom: 30px"
             onclick="addAddress(this);return false" href="{{Route('address.add',['customer'=>$customer])}}">
         <i class="fa fa-edit"></i>ADD

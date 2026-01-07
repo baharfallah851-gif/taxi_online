@@ -27,8 +27,8 @@
                             <td>{{$model->make?->title}}</td>
                             <td>{{$model->title}}</td>
                             <td>
-                                <a href="{{route('model.show',['model'=>$model])}}" class="btn btn-info"><i class="fa fa-pencil"></i> UPDATE </a>
-                                <a href="{{route('model.delete',['model'=>$model])}}" class="btn btn-danger"><i class="fa fa-trash"></i> DELETE </a>
+                                <a href="{{route('model.show',['model'=>$model])}}" class="btn btn-info"><i class="mdi mdi-pencil"></i> UPDATE </a>
+                                <a href="{{route('model.delete',['model'=>$model])}}" class="btn btn-danger"><i class="mdi mdi-trash-can-outline"></i> DELETE </a>
                             </td>
                         </tr>
                     @endforeach

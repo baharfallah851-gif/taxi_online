@@ -25,8 +25,8 @@
                         <tr>
                             <td>{{$make->title}}</td>
                             <td>
-                                <a href="{{route('make.show',['make'=>$make])}}" class="btn btn-info"><i class="fa fa-pencil"></i> UPDATE </a>
-                                <a href="{{route('make.delete',['make'=>$make])}}" class="btn btn-danger"><i class="fa fa-trash"></i> DELETE </a>
+                                <a href="{{route('make.show',['make'=>$make])}}" class="btn btn-info"><i class="mdi mdi-pencil"></i> UPDATE </a>
+                                <a href="{{route('make.delete',['make'=>$make])}}" class="btn btn-danger"><i class="mdi mdi-trash-can-outline"></i> DELETE </a>
                             </td>
                         </tr>
                     @endforeach

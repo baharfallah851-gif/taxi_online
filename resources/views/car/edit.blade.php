@@ -100,10 +100,85 @@
                     </div>
 
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-success" style="margin-top: 30px">Update Car</button>
+                        <button type="submit" class="btn btn-info" style="margin-top: 30px">Update Car</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+
+    <style>
+        {{-- car type css --}}
+        /* گروه‌بندی گزینه‌ها */
+        .gender-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* استایل پایه گزینه‌ها */
+        .gender-option {
+            padding: 8px 18px;
+            border-radius: 999px; /* شکل کپسولی */
+            background: #111;
+            color: #888;
+            border: 1px solid #2a2a2a;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+        }
+
+        /* مخفی کردن رادیو */
+        .gender-option input {
+            display: none;
+        }
+
+        /* آیکن‌ها */
+        .gender-option i {
+            font-size: 16px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        /* خم کردن آیکن‌ها برای حالت پویا */
+        .gender-option .fa-car {
+            transform: rotate(-10deg);
+        }
+
+        .gender-option .fa-car-side {
+            transform: rotate(10deg);
+        }
+
+        .gender-option .fa-van-shuttle {
+            transform: rotate(-5deg);
+        }
+
+        /* حالت انتخاب‌شده */
+        .gender-option:has(input:checked) {
+            color: #fff;
+            border-color: #00e5ff;
+            background: #0d0d0d;
+            box-shadow:
+                0 0 6px rgba(0,229,255,0.5),
+                0 0 14px rgba(0,229,255,0.25);
+            transform: translateY(-1px);
+        }
+
+        /* هاور */
+        .gender-option:hover {
+            color: #ccc;
+        }
+
+        /* هاور روی آیکن، کمی بزرگ و صاف می‌شود */
+        .gender-option:hover i {
+            transform: rotate(0deg) scale(1.1);
+        }
+
+        {{--! car type css --}}
+    </style>
+
 @endsection

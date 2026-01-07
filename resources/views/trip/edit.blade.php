@@ -132,7 +132,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-info mb-2" style="margin-top: 30px">Update</button>
+                        <button type="submit" class="btn btn-info mb-2" style="margin-top: 30px">Update Trip</button>
                     </div>
                 </form>
             </div>

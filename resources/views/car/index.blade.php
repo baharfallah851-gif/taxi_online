@@ -39,9 +39,9 @@
                             <td>@if($car->technical_inspection == 1) ✔️ @else ❌ @endif</td>
                             <td>
                                 <a href="{{route('car.show',['car'=>$car])}}" class="btn btn-info"><i
-                                            class="fa fa-pencil"></i> UPDATE </a>
+                                            class="mdi mdi-pencil"></i> UPDATE </a>
                                 <a href="{{route('car.delete',['car'=>$car])}}" class="btn btn-danger"><i
-                                            class="fa fa-trash"></i> DELETE </a>
+                                            class="mdi mdi-trash-can-outline"></i> DELETE </a>
                             </td>
                         </tr>
                     @endforeach

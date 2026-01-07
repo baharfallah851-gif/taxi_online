@@ -17,7 +17,7 @@ Route::post('/login',[\App\Http\Controllers\LoginController::class,'enter'])->na
 
 
 //logout
-//Route::get('/logout',   ::class,'logout'])->name('logout');
+//Route::get('logout'::class,'logout'])->name('logout');
 
 
 

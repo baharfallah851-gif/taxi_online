@@ -234,12 +234,15 @@
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label">Upload Image</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control" name="image"
-                                           accept="image/*"> {{-- accept-> فقط فایل های تصویری--}}
+                                    <input type="file" class="form-control" name="image" onchange="previewImage(event)" accept="image/*">
+
+                                    {{-- پیش نمایش عکس --}}
+                                    <img id="preview" class="img-thumbnail mt-2"
+                                         style="max-width: 150px;"
+                                         src="{{ $driver->image ? asset('storage/' . $driver->image) : '#' }}">
 
                                     {{-- مسیر عکس قبلی --}}
-                                    <input type="hidden" name="old_image"
-                                           value="{{$driver->image}}"> {{--چون تابپ فابل value نمیگیره--}}
+                                    <input type="hidden" name="old_image" value="{{$driver->image}}">
                                 </div>
                             </div>
                         </div>
@@ -247,15 +250,28 @@
                     </div>
 
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-info" style="margin-top: 30px">Add Driver</button>
+                        <button type="submit" class="btn btn-info" style="margin-top: 30px">Update Driver</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
+    <script>
+        function previewImage(event) {
+            const input = event.target;
+            const preview = document.getElementById('preview');
+
+            if (input.files && input.files[0]) {
+                preview.src = URL.createObjectURL(input.files[0]);
+                preview.style.display = 'block';
+            }
+        }
+    </script>
+
 
     <style>
+        {{-- rating css --}}
         .rating {
             direction: rtl; /* خیلی مهم */
             unicode-bidi: bidi-override;
@@ -276,5 +292,44 @@
         .rating label:hover ~ label {
             color: gold;
         }
+        {{--! rating css --}}
+
+        {{-- gender css --}}
+         .gender-option {
+             padding: 8px 18px;
+             border-radius: 999px; /* شکل کپسولی واقعی */
+             background: #111;
+             color: #888;
+             border: 1px solid #2a2a2a;
+             display: inline-flex;
+             align-items: center;
+             gap: 8px;
+             cursor: pointer;
+             font-size: 14px;
+             font-weight: 500;
+             transition: all 0.25s ease;
+         }
+
+    .gender-option input {
+        display: none;
+    }
+
+    /* حالت انتخاب‌شده */
+    .gender-option:has(input:checked) {
+        color: #fff;
+        border-color: #00e5ff;
+        background: #0d0d0d;
+        box-shadow:
+            0 0 6px rgba(0,229,255,0.5),
+            0 0 14px rgba(0,229,255,0.25);
+        transform: translateY(-1px);
+    }
+
+    /* هاور */
+    .gender-option:hover {
+        color: #ccc;
+    }
+
+        {{--! gender css --}}
     </style>
 @endsection

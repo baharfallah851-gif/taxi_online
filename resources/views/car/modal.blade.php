@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-body">
         <input type="hidden" name="driver_id" value="{{$driver->id}}">
-        <h4 class="card-title text-center">car List</h4>
+        <h4 class="card-title text-center">Car Table</h4>
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead class="text-center">

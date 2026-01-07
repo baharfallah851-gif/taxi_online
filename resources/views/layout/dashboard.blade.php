@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TaxiOnline | VIVARA</title>
     <!-- plugins:css -->
+    <link rel="stylesheet" href="{{ asset('assets/vendors/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{asset('assets/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/css/vendor.bundle.base.css')}}">
-    <!-- endinject -->
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{asset('assets/vendors/jvectormap/jquery-jvectormap.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel-2/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel-2/owl.theme.default.min.css')}}">
     <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!-- End layout styles -->
@@ -26,6 +24,7 @@
 <body>
 <div class="container-scroller">
     <!-- partial:partials/_sidebar.html -->
+    <!-- قسمت منو -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
             <h4>Management Panel</h4>
@@ -79,7 +78,7 @@
             <li class="nav-item menu-items">
                 <a class="nav-link" href="{{route('trip.index')}}">
               <span class="menu-icon">
-                <i class="mdi mdi-compass"></i>
+                <i class="mdi mdi-airballoon"></i>
               </span>
                     <span class="menu-title">Trips</span>
                 </a>
@@ -140,7 +139,9 @@
             </li>
         </ul>
     </nav>
+    <!-- پایان منو -->
     <!-- partial -->
+    <!-- نوار عنوان -->
     <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
@@ -170,7 +171,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item preview-item">
                                 <div class="preview-thumbnail">
-                                    <img src="{{asset('assets/images/faces/face4.jpg')}}" alt="image"
+                                    <img src="{{asset('assets/images/faces/face5.jpg')}}" alt="image"
                                          class="rounded-circle profile-pic">
                                 </div>
                                 <div class="preview-item-content">
@@ -257,9 +258,9 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                             <div class="navbar-profile">
-                                <img class="img-xs rounded-circle" src="{{asset('assets/images/faces/face15.jpg')}}"
+                                <img class="img-xs rounded-circle" src="{{asset('img/my_image.jpg')}}"
                                      alt="">
-                                <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                                <p class="mb-0 d-none d-sm-block navbar-profile-name">Bahar Fallah</p>
                                 <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                             </div>
                         </a>
@@ -267,25 +268,25 @@
                              aria-labelledby="profileDropdown">
                             <h6 class="p-3 mb-0">Profile</h6>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
+                            <a class="dropdown-item preview-item" href="{{route('home')}}">
                                 <div class="preview-thumbnail">
                                     <div class="preview-icon bg-dark rounded-circle">
-                                        <i class="mdi mdi-settings text-success"></i>
+                                        <i class="mdi mdi-home text-success"></i>
                                     </div>
                                 </div>
                                 <div class="preview-item-content">
-                                    <p class="preview-subject mb-1">Settings</p>
+                                    <p class="preview-subject mb-1">HOME</p>
                                 </div>
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
+                            <a class="dropdown-item preview-item" href="{{route('login.form')}}">
                                 <div class="preview-thumbnail">
                                     <div class="preview-icon bg-dark rounded-circle">
                                         <i class="mdi mdi-logout text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="preview-item-content">
-                                    <p class="preview-subject mb-1">Log out</p>
+                                    <p class="preview-subject mb-1">LOG OUT</p>
                                 </div>
                             </a>
                             <div class="dropdown-divider"></div>
@@ -309,6 +310,7 @@
         </div>
         <!-- main-panel ends -->
     </div>
+    <!--پایان نوار عنوان -->
     <!-- page-body-wrapper ends -->
 </div>
 <!-- container-scroller -->

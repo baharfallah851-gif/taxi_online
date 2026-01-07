@@ -46,9 +46,9 @@
                         <td>{{$customer->city->name}}</td>
                         <td>
                             <a href="{{route('customer.show',['customer'=>$customer])}}" class="btn btn-info"><i class="mdi mdi-pencil"></i> UPDATE</a>
-                            <a href="{{route('customer.delete',['customer'=>$customer])}}" class="btn btn-danger"><i class="mdi mdi-trash-can"></i> DELETE</a>
-                            <a href="{{route('address.index',['customer'=>$customer])}}" class="btn btn-success" onclick="openModal(this);return false"><i class="fa fa-address"></i> ADDRESS</a>
-                            <a href="{{route('trip.modal', ['customer' =>$customer])}}" class="btn btn-primary" onclick="openModal(this);return false"><i class="mdi mdi-airplane"></i>TRIPS</a>
+                            <a href="{{route('customer.delete',['customer'=>$customer])}}" class="btn btn-danger"><i class="mdi mdi-trash-can-outline"></i> DELETE</a>
+                            <a href="{{route('address.index',['customer'=>$customer])}}" class="btn btn-success" onclick="openModal(this);return false"><i class="mdi mdi-home"></i> ADDRESS</a>
+                            <a href="{{route('trip.modal', ['customer' =>$customer])}}" class="btn btn-primary" onclick="openModal(this);return false"><i class="mdi mdi-car-hatchback"></i>TRIPS</a>
                         </td>
                     </tr>
                 @endforeach
@@ -64,7 +64,7 @@
 
             <div class="modal-header">
                 <button type="button" class="close m-0" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">ADDRESS</h4>
+                <h4 class="modal-title"></h4>
             </div>
 
             <div class="modal-body">
