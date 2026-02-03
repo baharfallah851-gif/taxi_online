@@ -258,7 +258,7 @@
     </div>
 
     <script>
-        function previewImage(event) {
+        function previewImage(event) {`5yzxcfccty8`
             const input = event.target;
             const preview = document.getElementById('preview');
 
